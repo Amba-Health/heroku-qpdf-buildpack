@@ -21,6 +21,7 @@ chmod a+x qpdf-$VERSION-x86_64.AppImage
 
 cp -r squashfs-root/usr/* .
 rm -rf qpdf-*.AppImage squashfs-root
+rm -f bin/less
 
 echo "exporting PATH and LD_LIBRARY_PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/qpdf.sh"
